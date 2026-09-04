@@ -535,33 +535,158 @@ export default function Home() {
 
       </section>
 
-      {/* FOOTER */}
+{/* FOOTER */}
 
-      <footer className="border-t border-[#e8a0a0]/10 px-5 py-10">
+<footer className="relative z-10 border-t border-[#e8a0a0]/10 px-5 py-10">
 
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-4 text-center">
+  <div className="mx-auto max-w-6xl">
 
-          <div className="h-14 w-14 overflow-hidden rounded-full border border-[#e8a0a0]/30">
-            <img
-              src="/logo.png"
-              alt="KrishAIWorks Logo"
-              className="h-full w-full object-cover"
-            />
+    {/* RELATED TOOLS */}
+
+    <div className="mb-10">
+
+      <div className="mb-6 text-center">
+
+        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#e8a0a0]/70">
+          Explore More
+        </p>
+
+        <h3 className="mt-2 text-2xl font-bold">
+          More Useful Tools
+        </h3>
+
+        <p className="mx-auto mt-2 max-w-xl text-sm text-zinc-500">
+          Explore more free tools from KrishAIWorks to simplify your
+          everyday digital tasks.
+        </p>
+
+      </div>
+
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+        {/* Password Generator */}
+
+        <a
+          href="https://passwordgenerator.krishaiworks.com/"
+          className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#e8a0a0]/30 hover:bg-[#e8a0a0]/[0.04]"
+        >
+
+          <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-[#e8a0a0]/20 bg-[#e8a0a0]/10 text-lg">
+            🔐
           </div>
 
-          <div>
-            <p className="font-bold">
-              KrishAIWorks
-            </p>
+          <h4 className="font-semibold transition-colors group-hover:text-[#e8a0a0]">
+            Password Generator
+          </h4>
 
-            <p className="mt-2 text-xs text-zinc-600">
-              AI Solutions That Work
-            </p>
+          <p className="mt-2 text-xs leading-5 text-zinc-500">
+            Generate strong and secure passwords instantly.
+          </p>
+
+        </a>
+
+
+        {/* ZIP File Creator */}
+
+        <a
+          href="https://zipfilecreator.krishaiworks.com/"
+          className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#e8a0a0]/30 hover:bg-[#e8a0a0]/[0.04]"
+        >
+
+          <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-[#e8a0a0]/20 bg-[#e8a0a0]/10 text-lg">
+            🗜️
           </div>
 
-        </div>
+          <h4 className="font-semibold transition-colors group-hover:text-[#e8a0a0]">
+            ZIP File Creator
+          </h4>
 
-      </footer>
+          <p className="mt-2 text-xs leading-5 text-zinc-500">
+            Create ZIP archives from your files quickly and easily.
+          </p>
+
+        </a>
+
+
+        {/* Base64 Encoder & Decoder */}
+
+        <a
+          href="https://base64encoderdecoder.krishaiworks.com/"
+          className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#e8a0a0]/30 hover:bg-[#e8a0a0]/[0.04]"
+        >
+
+          <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-[#e8a0a0]/20 bg-[#e8a0a0]/10 text-lg">
+            &lt;/&gt;
+          </div>
+
+          <h4 className="font-semibold transition-colors group-hover:text-[#e8a0a0]">
+            Base64 Encoder &amp; Decoder
+          </h4>
+
+          <p className="mt-2 text-xs leading-5 text-zinc-500">
+            Encode and decode Base64 text instantly.
+          </p>
+
+        </a>
+
+
+        {/* JSON Formatter & Validator */}
+
+        <a
+          href="https://jsonformattervalidator.krishaiworks.com/"
+          className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#e8a0a0]/30 hover:bg-[#e8a0a0]/[0.04]"
+        >
+
+          <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-[#e8a0a0]/20 bg-[#e8a0a0]/10 text-lg">
+            {"{}"}
+          </div>
+
+          <h4 className="font-semibold transition-colors group-hover:text-[#e8a0a0]">
+            JSON Formatter &amp; Validator
+          </h4>
+
+          <p className="mt-2 text-xs leading-5 text-zinc-500">
+            Format, validate, and clean JSON data effortlessly.
+          </p>
+
+        </a>
+
+      </div>
+
+    </div>
+
+
+    {/* FOOTER BOTTOM */}
+
+    <div className="flex flex-col items-center justify-center gap-4 border-t border-white/10 pt-8 text-center">
+
+      <div className="h-14 w-14 overflow-hidden rounded-full border border-[#e8a0a0]/30">
+        <img
+          src="/logo.png"
+          alt="KrishAIWorks Logo"
+          className="h-full w-full object-cover"
+        />
+      </div>
+
+      <div>
+        <p className="font-bold">
+          KrishAIWorks
+        </p>
+
+        <p className="mt-2 text-xs text-zinc-600">
+          AI Solutions That Work
+        </p>
+      </div>
+
+      <p className="text-xs text-zinc-600">
+        © {new Date().getFullYear()} KrishAIWorks. All rights reserved.
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
 
     </main>
   );
