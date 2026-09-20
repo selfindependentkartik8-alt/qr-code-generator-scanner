@@ -656,35 +656,53 @@ export default function Home() {
     </div>
 
 
-    {/* FOOTER BOTTOM */}
+   {/* FOOTER BOTTOM */}
 
-    <div className="flex flex-col items-center justify-center gap-4 border-t border-white/10 pt-8 text-center">
+<div className="flex flex-col items-center justify-center gap-4 border-t border-white/10 pt-8 text-center">
 
-      <div className="h-14 w-14 overflow-hidden rounded-full border border-[#e8a0a0]/30">
-        <img
-          src="/logo.png"
-          alt="KrishAIWorks Logo"
-          className="h-full w-full object-cover"
-        />
-      </div>
+  <div className="h-14 w-14 overflow-hidden rounded-full border border-[#e8a0a0]/30">
+    <img
+      src="/logo.png"
+      alt="KrishAIWorks Logo"
+      className="h-full w-full object-cover"
+    />
+  </div>
 
-      <div>
-        <p className="font-bold">
-          KrishAIWorks
-        </p>
+  <div>
+    <p className="font-bold">
+      KrishAIWorks
+    </p>
 
-        <p className="mt-2 text-xs text-zinc-600">
-          AI Solutions That Work
-        </p>
-      </div>
+    <p className="mt-2 text-xs text-zinc-600">
+      AI Solutions That Work
+    </p>
+  </div>
 
-      <p className="text-xs text-zinc-600">
-        © {new Date().getFullYear()} KrishAIWorks. All rights reserved.
-      </p>
+  <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-zinc-600">
 
-    </div>
+    <a
+      href="https://krishaiworks.com/privacy-policy"
+      className="whitespace-nowrap transition hover:text-[#e8a0a0]"
+    >
+      Privacy Policy
+    </a>
+
+    <a
+      href="https://krishaiworks.com/terms-and-conditions"
+      className="whitespace-nowrap transition hover:text-[#e8a0a0]"
+    >
+      Terms & Conditions
+    </a>
 
   </div>
+
+  <p className="text-xs text-zinc-600">
+    © {new Date().getFullYear()} KrishAIWorks. All rights reserved.
+  </p>
+
+</div>
+
+</div>
 
 </footer>
 
